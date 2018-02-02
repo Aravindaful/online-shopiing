@@ -10,6 +10,8 @@
    http://www.springframework.org/schema/mvc/spring-mvc.xsd">
    
    <context:component-scan base-package="net.ah.onlineshopping.controller"/>
+   <context:component-scan base-package="net.ah.shoppingbackend" />
+   
    <mvc:annotation-driven /> 
    <mvc:resources location="/assets/" mapping="/resources/**" /> 
   
