@@ -18,12 +18,14 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 public class HibernateConfig {
 	
-	private static String DATABASE_DRIVER="org.h2.Driver";
+	 private static String DATABASE_DRIVER="org.h2.Driver";
 	private static String DATABASE_URL="jdbc:h2:tcp://localhost/~/onlineshopping";
 	private static String DATABASE_DIALECT="org.hibernate.dialect.H2Dialect";
 	private static String DATABASE_USERNAME="sa";
 	private static String DATABASE_PASSWORD="";
+	 
 	
+ 
 	
 	@Bean
 	public DataSource getDataSource() {
@@ -35,7 +37,7 @@ public class HibernateConfig {
 		dataSource.setPassword(DATABASE_PASSWORD);
 		
 		return dataSource;
-	}
+	}	
 	
 	
 @Bean
@@ -61,4 +63,6 @@ public HibernateTransactionManager getTransactionManager(SessionFactory sessionF
 	HibernateTransactionManager transactionManager = new HibernateTransactionManager(sessionFactory);
 	return transactionManager;
 }
+
+
 }
