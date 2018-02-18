@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.multipart.MultipartFile;
 
 public class FileUploadUtility {
-	private static final String ABS_PATH ="D:\\Eclipse\\online-shopping\\onlineshopping\\src\\main\\webapp\\assets\\images\\";
+	private static final String ABS_PATH ="D:\\MProj\\eclipse-workspace\\online-shopping\\onlineshopping\\src\\main\\webapp\\assets\\images";
 	private static String REAL_PATH="";
 	public static final Logger logger =LoggerFactory.getLogger(FileUploadUtility.class);
 	

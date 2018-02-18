@@ -32,11 +32,11 @@ public class Product {
 	@NotBlank(message="Please Enter Description")
 	private String description;
 	
-	@Min(value=1)
+	@Min(value=1,message="The price cannot less than 1!")
 	@Column(name="unit_price")
 	private double unitPrice;
 	
-	@Min(value=1,message="The price cannot less than 1!")
+	 
 	private int quantity;
 	
 	@Column(name="is_active")
